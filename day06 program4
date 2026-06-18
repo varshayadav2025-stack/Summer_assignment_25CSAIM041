@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int x,n;
+    long long result = 1;
+    printf("enter base (x): ");
+    scanf("%d", &x);
+    printf("enter power (n): ");
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++)
+    {
+        result = result * x;
+    }
+    printf("the result of %d raised to the power %d is: %lld", x, n, result);
+    return 0;
+}
